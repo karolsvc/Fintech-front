@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/dashboard/style.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <header class="dashboard-header">
+        <div class="header-menu-container d-flex">
+            <div class="header-menu d-flex align-items-center">
+                <img onclick="openNav()" class="header-menu-icon" src="./assets/menu.png">
+                <h1 class="header-title"> DASHBOARD </h1>
+            </div>
+    
+            <a href="./login.html">
+                <button class="header-button">SAIR</button>
+            </a>
+        </div>
+
+        <div class="dashboard-nav-container">
+            <img class="nav-container-close" onclick="closeNav()" src="./assets/close-menu-dashboard.png" alt="">
+
+            <h3 class="nav-title">MENU</h3>
+
+            <nav class="dashboard-nav">
+                <ul class="nav-list">
+                    <a class="nav-item-link" href="./dashboard.html">
+                        <li class="nav-item">HOME</li>
+                    </a>
+                    <a class="nav-item-link nav-item-link-segundo" href="./receitas.html">
+                        <li class="nav-item">RECEITAS</li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <h2 class="dashboard-nome">Karoline Silva da Costa</h2>
+
+    <main class="container-fluid dashboard">
+        <div class="row h-100 w-100 no-gutters">
+            <div class="col-12 col-xl-3 dashboard-card">
+                <h3 class="card-titulo">TOTAL RECEITA MÊS</h3>
+
+                <span class="card-valor">R$ 4.500,00</span>
+
+            </div>
+
+            <div class="col-12 col-xl-3 dashboard-card">
+                <h3 class="card-titulo">TOTAL GASTO MÊS</h3>
+
+                <span class="card-valor">R$ 1.500,00</span>
+            </div>
+
+            <div class="col-12 col-xl-4 dashboard-card">
+                <h3 class="card-titulo">TOTAL INVESTIMENTOS</h3>
+
+                <span class="card-valor">R$ 500,00</span>
+            </div>
+
+
+            <div class="col-12 col-xl-4 dashboard-card">
+                <h3 class="card-titulo">ÚLTIMO VALOR GASTO</h3>
+
+                <span class="card-valor">R$ 4.500,00</span>
+            </div>
+
+
+            <div class="col-12 col-xl-4 dashboard-card">
+                <h3 class="card-titulo">SALDO</h3>
+
+                <span class="card-valor">R$ 4.500,00</span>
+            </div>
+        </div>
+    </main>
+
+    <script src="./js/dashboard/script.js"></script>
+</body>
+</html>

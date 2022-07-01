@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/login/style.css">
+    <title>Login</title>
+</head>
+<body>
+    <main class="container-fluid login">
+        <div class="row h-100 w-100 no-gutters">
+            <div class="col-12 col-lg-3 coluna-login">
+                <h2 class="login-titulo"> MYACCOUNT </h2>
+                <p class="login-mensagem">BEM-VINDO</p>
+                <p class="login-hint">ACESSE SUA CONTA</p>
+
+                <button onclick="openModal()" class="login-botao">ENTRAR</button>
+            </div>
+
+            <div class="col-12 col-lg-9 coluna-loggon">
+                <h1 class="loggon-titulo">CRIAR SUA CONTA</h1>
+
+                <form class="formulario-loggon">
+                    <input class="input-nome input" placeholder="NOME" type="text" name="nome">
+                    <input class="input-email input" placeholder="E-MAIL" type="email" name="email">
+                    <input class="input-senha input" placeholder="SENHA" type="password" name="nome">
+                    <input class="input-genero input" placeholder="GÊNERO" type="text" name="nome">
+                    <input class="input-data input" placeholder="DATA DE NASCIMENTO" type="date" name="nome">
+                </form>
+
+                <button onclick="openModal()" class="logon-botao">CADASTRAR</button>
+            </div>
+        </div>
+    </main>
+
+    <div class="login-modal">
+        <div class="modal-conteudo">
+            <span class="modal-close" onclick="closeModal()">&times;</span>
+
+            <p class="titulo-modal">LOGIN</p>
+           
+            <form class="formulario-login">
+                <input class="input-email input-login" placeholder="E-MAIL" type="text" name="login-email">
+                <input class="input-senha input-login" placeholder="SENHA" type="password" name="login-senha">
+            </form>
+
+            <span class="hint-login">Esqueceu sua senha?</span>
+
+            <a href="./dashboard.html">
+                <button class="logon-botao">ENTRAR</button>
+            </a>
+        </div>
+    </div>
+
+
+    <script src="./js/login/script.js"></script>
+</body>
+</html>

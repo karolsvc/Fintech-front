@@ -1,0 +1,153 @@
+@import "../style.css";
+
+.dashboard-header {
+    display: flex;
+    background-color: #293945;
+    color: #FFF;
+    height: 75px;
+}
+
+.header-menu-container {
+    width: 100%;
+    justify-content: space-between;
+    padding: 0px 35px;
+    align-items: center;
+}
+
+.header-title {
+    font-weight: 700;
+    font-size: 28px;
+    margin-left: 20px;
+}
+
+.header-menu-icon {
+    height: 25px;
+    width: 22px;
+    cursor: pointer;
+}
+
+.header-button {
+    font-weight: 700;
+    font-size: 18px;
+    color: #FFF;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.dashboard-nav-container {
+    width: 362px;
+    height: 100%;
+    background-color: #A5B6C5;
+    display: none;
+
+    position: fixed;
+    z-index: 2;
+
+    align-items: center;
+    flex-flow: column;
+}
+
+.dashboard-nav-container--open {
+    display: flex;
+}
+
+.nav-container-close {
+    height: 22px;
+    position: absolute;
+    right: 12px;
+    top: 12px;
+
+    cursor: pointer;
+}
+
+.nav-title {
+    margin-top: 65px;
+    font-weight: 700;
+    font-size: 32px;
+    color: #000;
+}
+
+.dashboard-nav {
+    margin-top: 61px;
+}
+
+.nav-list {
+    list-style: none;
+}
+
+.nav-item {
+    width: 232px;
+    height: 64px;
+    background: #526979;
+    border-radius: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 700;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.nav-item-link,
+.nav-item-link:hover {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.nav-item {
+    margin-top: 19px;
+}
+
+/**/
+
+.dashboard-card {
+    background: #526979;
+    border-radius: 46px;
+
+    width: 414px;
+    height: 250.19px;
+}
+
+.dashboard-card:not(:first-child) {
+    margin-left: 56px;
+}
+
+.dashboard-nome {
+    margin-top: 44px;
+    padding: 0 76px;
+}
+
+.dashboard {
+    margin-top: 44px;
+}
+
+.dashboard-card {
+    margin-top: 30px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.card-titulo {
+    color: #FFF;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.card-valor {
+    font-weight: 400;
+    font-size: 24px;
+
+    color: #FFF;
+    margin-top: 50px;
+}
+
+@media(max-width: 1200px) {
+    .dashboard-card:not(:first-child) {
+        margin-left: 0px;
+    }
+}

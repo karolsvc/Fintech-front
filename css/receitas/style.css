@@ -1,0 +1,259 @@
+@import "../style.css";
+
+.dashboard-header {
+    display: flex;
+    background-color: #293945;
+    color: #FFF;
+    height: 75px;
+}
+
+.header-menu-container {
+    width: 100%;
+    justify-content: space-between;
+    padding: 0px 35px;
+    align-items: center;
+}
+
+.header-title {
+    font-weight: 700;
+    font-size: 28px;
+    margin-left: 20px;
+}
+
+.header-menu-icon {
+    height: 25px;
+    width: 22px;
+    cursor: pointer;
+}
+
+.header-menu-icon-receitas {
+    margin-left: 15px;
+}
+
+.header-button {
+    font-weight: 700;
+    font-size: 18px;
+    color: #FFF;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.dashboard-nav-container {
+    width: 362px;
+    height: 100%;
+    background-color: #A5B6C5;
+    display: none;
+
+    position: fixed;
+    z-index: 2;
+
+    align-items: center;
+    flex-flow: column;
+}
+
+.dashboard-nav-container--open {
+    display: flex;
+}
+
+.nav-container-close {
+    height: 22px;
+    position: absolute;
+    right: 12px;
+    top: 12px;
+
+    cursor: pointer;
+}
+
+.nav-title {
+    margin-top: 65px;
+    font-weight: 700;
+    font-size: 32px;
+    color: #000;
+}
+
+.dashboard-nav {
+    margin-top: 61px;
+}
+
+.nav-list {
+    list-style: none;
+}
+
+.nav-item {
+    width: 232px;
+    height: 64px;
+    background: #526979;
+    border-radius: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 700;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.nav-item-link,
+.nav-item-link:hover {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.nav-item {
+    margin-top: 19px;
+}
+
+/**/
+
+.dashboard-item {
+    background: rgba(165, 182, 197, 0.99);
+    border-radius: 15px;
+
+    width: 100%;
+    height: 110px;
+
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    font-weight: 700;
+}
+
+.dashboard-nome {
+    margin-top: 44px;
+    padding: 0 76px;
+}
+
+.dashboard {
+    margin-top: 44px;
+}
+
+.icone-item {
+    margin-left: 5px;
+    height: 22px;
+    cursor: pointer;
+}
+
+.item-descricao {
+    display: flex;
+}
+
+.icones-item {
+    display: flex;
+}
+
+.icon-mais {
+    cursor: pointer;
+}
+
+
+.novo-item-modal {
+    display: none;
+    position: fixed;
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.login-modal-open {
+    display: flex;
+}
+
+.modal-conteudo {
+    background: rgba(82, 105, 121, 1);    
+    margin: 10% auto;
+    padding: 81px 277px 46px 277px;
+    border: none;
+    width: 40%;
+
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    position: relative;
+}
+
+.input-novo {
+    width: 238px;
+    height: 35px;
+    background: rgba(165, 182, 197, 0.99);
+    border-radius: 16px;
+    border: none;
+    outline: none;
+    color: #FFF;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+}
+
+.botao-novo {
+    margin-top: 20px;
+    width: 231px;
+    height: 71px;
+    background: #293945;
+    border-radius: 16px;    
+    color: #FFF;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.input-novo:not(:first-child) {
+    margin-top: 15px;
+}
+
+.input-novo::placeholder {
+    color: #FFF;
+}
+
+.hint-login {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: 13px;
+    color: #FFF;
+}
+
+.modal-close {
+    position: absolute;
+    right: 3%;
+    top: 3%;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.adicionar-erro {
+    width: 200px;
+    color: #FFF;
+    margin-top: 15px;
+    display: none;
+}
+
+.erro-mostrar {
+    display: block;
+}
+
+@media(max-width: 1200px) {
+    .dashboard-card:not(:first-child) {
+        margin-left: 0px;
+    }
+}
+
+@media(max-width: 400px) {
+    .item-descricao {
+        flex-flow: column;
+    }
+}
+
+@media(max-width: 992px) {
+    .modal-conteudo {
+        padding: 81px 157px 46px 157px;
+    }
+}

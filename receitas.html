@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/receitas/style.css">
+    <title>Receitas</title>
+</head>
+<body>
+    <header class="dashboard-header">
+        <div class="header-menu-container d-flex">
+            <div class="header-menu d-flex align-items-center">
+                <img onclick="openNav()" class="header-menu-icon" src="./assets/menu.png">
+                <h1 class="header-title"> RECEITAS </h1>
+                <img class="header-menu-icon-receitas" src="./assets/receitas.png" alt="">
+            </div>
+    
+            <a href="./login.html">
+                <button class="header-button">SAIR</button>
+            </a>
+        </div>
+
+        <div class="dashboard-nav-container">
+            <img class="nav-container-close" onclick="closeNav()" src="./assets/close-menu-dashboard.png" alt="">
+
+            <h3 class="nav-title">MENU</h3>
+
+            <nav class="dashboard-nav">
+                <ul class="nav-list">
+                    <a class="nav-item-link" href="./dashboard.html">
+                        <li class="nav-item">HOME</li>
+                    </a>
+                    <a class="nav-item-link nav-item-link-segundo" href="./receitas.html">
+                        <li class="nav-item">RECEITAS</li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container-fluid dashboard d-flex justify-content-center">
+        <div class="row h-100 w-100 receitas-items">
+
+            <div class="col-12 d-flex justify-content-end">
+                <img class="icon-mais" onclick="openModal()" src="./assets/mais.png" alt="">
+            </div>
+
+            <div class="col-12 dashboard-item">
+                <span class="item-valor">R$ 200</span>
+                <span class="item-data">02/03</span>
+                <span class="item-descricao d-flex">
+                    Loja abril
+                
+                    <div class="icones-item">
+                        <img class="icone-item" src="./assets/atualizar.png" alt="">
+                        <img class="icone-item" src="./assets/lixo.png" alt="">
+                    </div>
+                </span>
+            </div>
+
+            <div class="col-12 dashboard-item">
+                <span class="item-valor">R$ 200</span>
+                <span class="item-data">02/03</span>
+                <span class="item-descricao">
+                    Loja abril
+
+                    <div class="icones-item">
+                        <img class="icone-item" src="./assets/atualizar.png" alt="">
+                        <img class="icone-item" src="./assets/lixo.png" alt="">
+                    </div>
+                </span>
+            </div>
+        </div>
+    </main>
+
+    <div class="novo-item-modal">
+        <div class="modal-conteudo">
+            <span class="modal-close" onclick="closeModal()">&times;</span>
+           
+            <form class="formulario-loggon">
+                <input id="quanto" class="input-novo" placeholder="QUANTO?" type="text">
+                <input id="quando" class="input-novo" placeholder="QUANDO?" type="text">
+                <input id="descricao" class="input-novo" placeholder="DESCRIÇÃO" type="text">
+            </form>
+
+            <button onclick="adicionar()" class="botao-novo">ADICIONAR</button>
+
+            <p class="adicionar-erro">Informe valores válidos</p>
+        </div>
+    </div>
+
+    <script src="./js/receitas/script.js"></script>
+    <script src="./js/dashboard/script.js"></script>
+
+</body>
+</html>
